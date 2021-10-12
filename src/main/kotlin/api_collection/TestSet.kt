@@ -11,14 +11,13 @@ fun main() {
 
     val resultadoUniao = funcionrios1.union(funcionrios2)
     resultadoUniao.forEach{println("união: ${it}")}
-    PulaLinha().linha()
+    PulaLinha()
 
     val funcionrios3 = setOf(joao, maria,pedro)
     val subtraindoUniao = funcionrios3.subtract(funcionrios2)
     subtraindoUniao.forEach{println("Subtração: ${it}")}
-    PulaLinha().linha()
+    PulaLinha()
 
     val interceptando = funcionrios3.intersect(funcionrios2)
     interceptando.forEach{println("Intersecção: ${it}")}
-
 }

@@ -9,9 +9,9 @@ fun main() {
     val funcionarios = listOf(joao, pedro, maria)
 
     funcionarios.forEach { println(it) }
-    PulaLinha().linha()
+    PulaLinha()
     println(funcionarios.find { it.nome == "Maria" })
-    PulaLinha().linha()
+    PulaLinha()
     funcionarios.sortedBy { it.salario }.forEach { println("Organizado por Salário: ${it}") }
     funcionarios.sortedBy { it.nome }.forEach { println("Organizado por Nome:  ${it}") }
     funcionarios.groupBy { it.tipoContratacao }.forEach { println("Organizado por Tipo de Contrato:  ${it}") }

@@ -1,7 +1,12 @@
 package api_collection
 
-class PulaLinha {
- fun linha(){
-  println("---------//---------")
- }
+class PulaLinha() {
+
+    init {
+        linha()
+    }
+
+    fun linha() {
+        println("---------//---------")
+    }
 }
