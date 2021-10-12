@@ -9,9 +9,9 @@ fun main() {
     val funcionarios = listOf(joao, pedro, maria)
 
     funcionarios.forEach { println(it) }
-    println("-------------")
+    PulaLinha().linha()
     println(funcionarios.find { it.nome == "Maria" })
-    println("-------------")
+    PulaLinha().linha()
     funcionarios.sortedBy { it.salario }.forEach { println("Organizado por Salário: ${it}") }
     funcionarios.sortedBy { it.nome }.forEach { println("Organizado por Nome:  ${it}") }
     funcionarios.groupBy { it.tipoContratacao }.forEach { println("Organizado por Tipo de Contrato:  ${it}") }
@@ -25,8 +25,6 @@ data class Funcionario(
 ) {
     override fun toString(): String =
         """
-       Nome: ${nome} 
-       Salario: ${salario} 
-       
+       Nome: ${nome} | Salario: ${salario} 
     """.trimIndent()
 }
